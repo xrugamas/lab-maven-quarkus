@@ -393,22 +393,17 @@ Los logros pueden tardar unas horas en aparecer.
 
 ## Lista de verificación
 
-- [ ] Parte 1: `mvn -version` con Maven 3.9.x y Java 21
-- [ ] Parte 2: repositorio `xrugamas/lab-maven-quarkus` creado
-- [ ] Parte 3: `Hello World!` desde el JAR · PR fusionado
+- [x ] Parte 1: `mvn -version` con Maven 3.9.x y Java 21
+- [ x] Parte 2: repositorio `xrugamas/lab-maven-quarkus` creado
+- [ x] Parte 3: `Hello World!` desde el JAR · PR fusionado
 - [ ] Parte 4: `fruits.html` funciona · `./mvnw verify` pasa
 - [ ] Parte 5: badge de build en verde · issue cerrado con PR
 
 Mis Notas
-# Ejercicio: mvn package -DskipTests vs mvn package
-
-## Qué observé
-- ...
-## Qué fase se saltó (y cuál no)
-- ...
-
-## Por qué igual se generó el JAR
-- ...
-
+# Ejercicio: mvn package -DskipTests vs mvn package 
+## Qué observé  ## Qué fase se saltó (y cuál no) ## Por qué igual se generó el JAR
 ## -DskipTests vs -Dmaven.test.skip=true
-- ...
+# mvn package	-DskipTests	-Dmaven.test.skip=true
+# Compila las pruebas (testCompile)	sí	sí → hay test-classes	no → no hay test-classes
+# Ejecuta las pruebas (test)	sí	no («Tests are skipped.»)	no
+# Genera el JAR (package)	sí	sí	sí # 
