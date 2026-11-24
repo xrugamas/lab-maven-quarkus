@@ -398,3 +398,17 @@ Los logros pueden tardar unas horas en aparecer.
 - [ ] Parte 3: `Hello World!` desde el JAR · PR fusionado
 - [ ] Parte 4: `fruits.html` funciona · `./mvnw verify` pasa
 - [ ] Parte 5: badge de build en verde · issue cerrado con PR
+
+Mis Notas
+# Ejercicio: mvn package -DskipTests vs mvn package
+
+## Qué observé
+- ...
+## Qué fase se saltó (y cuál no)
+- ...
+
+## Por qué igual se generó el JAR
+- ...
+
+## -DskipTests vs -Dmaven.test.skip=true
+- ...
