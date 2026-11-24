@@ -396,7 +396,7 @@ Los logros pueden tardar unas horas en aparecer.
 - [x ] Parte 1: `mvn -version` con Maven 3.9.x y Java 21
 - [ x] Parte 2: repositorio `xrugamas/lab-maven-quarkus` creado
 - [ x] Parte 3: `Hello World!` desde el JAR · PR fusionado
-- [ ] Parte 4: `fruits.html` funciona · `./mvnw verify` pasa
+- [x ] Parte 4: `fruits.html` funciona · `./mvnw verify` pasa
 - [ ] Parte 5: badge de build en verde · issue cerrado con PR
 
 Mis Notas
