@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>Frutas</title></head>
+<body>
+  <h1>Frutas</h1>
+  <form id="f">
+    <input id="name" placeholder="Nombre" required>
+    <input id="description" placeholder="Descripción">
+    <button>Agregar</button>
+  </form>
+  <ul id="lista"></ul>
+  <script>
+    const pintar = frutas => document.getElementById('lista').innerHTML =
+      frutas.map(f => `<li>${f.name}: ${f.description ?? ''}</li>`).join('');
+    fetch('/fruits').then(r => r.json()).then(pintar);
+    document.getElementById('f').addEventListener('submit', e => {
+      e.preventDefault();
+      fetch('/fruits', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          name: document.getElementById('name').value,
+          description: document.getElementById('description').value
+        })      }).then(r => r.json()).then(pintar);
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
